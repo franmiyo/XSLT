@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instituto>
+	<datos>
+		<nombre_centro>Instituto Tecnológico Edix</nombre_centro>
+		<pag_web>https://institutotecnologico.edix.com</pag_web>
+		<empresa>Proeduca</empresa>
+		<tlf>+34 91 787 39 91</tlf>
+	</datos>
+	<ciclos>
+		<ciclo>
+			<id>ASIR</id>
+			<nombre>Administración de Sistemas Informáticos en Red</nombre>
+			<grado>Superior</grado>
+			<ano_decreto/>
+		</ciclo>
+		<ciclo>
+			<id>DAW</id>
+			<nombre>Desarrollo de Aplicaciones Web</nombre>
+			<grado>Superior</grado>
+			<ano_decreto/>
+		</ciclo>
+		<ciclo>
+			<id>DAM</id>
+			<nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+			<grado>Superior</grado>
+			<ano_decreto/>
+		</ciclo>
+	</ciclos>
+	<directiva>
+		<director>
+			<nombre>Chon</nombre>
+			<despacho/>
+		</director>
+		<jefe_estudios>
+			<nombre>Dani</nombre>
+			<despacho/>
+		</jefe_estudios>
+	</directiva>
+	<profesores>
+		<profesor>
+			<id>1</id>
+			<nombre>Félix</nombre>
+		</profesor>
+		<profesor>
+			<id>2</id>
+			<nombre>Raúl</nombre>
+		</profesor>
+		<profesor>
+			<id>3</id>
+			<nombre>Raquel</nombre>
+		</profesor>
+		<profesor>
+			<id>4</id>
+			<nombre>Tomás</nombre>
+		</profesor>
+	</profesores>
+</instituto>
