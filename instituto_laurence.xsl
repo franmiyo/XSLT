@@ -14,7 +14,6 @@
 			<br />
 			Despacho: <xsl:value-of select="ite/director/despacho"/>
 			<br />
-
 		</p>
 		<p>
 			Jefe/a de estudios: <xsl:value-of select="ite/jefe_estudios/nombre"/>
@@ -24,7 +23,6 @@
 		</p>
 
 		<h2>Profesorado</h2>
-
 		<!-- Primera tabla: profesorado -->
 		<table border="1">
 			<xsl:for-each select="/ite/profesores/profesor">
@@ -41,7 +39,6 @@
 
 		<br />
 		<h2>Ciclos</h2>
-
 		<!-- Lista no ordenada -->
 		<ul>
 			<xsl:for-each select="ite/ciclos/ciclo">
