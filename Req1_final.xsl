@@ -95,7 +95,7 @@
 
 			<label for="ciclo_elegido">Escoja el ciclo por el que quiere contactar: </label>
 			<select name="ciclo_elegido">
-				<xsl:for-each select="ciclos/ciclo">
+				<xsl:for-each select="ite/ciclos/ciclo">
 					<xsl:value-of select="@id" />
 
 					<xsl:value-of select="nombre" />
