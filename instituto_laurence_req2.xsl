@@ -1,4 +1,4 @@
-<?xml: version="1.0"?>
+<?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
@@ -21,7 +21,7 @@
 
 					<jefe_estudios>
 						<nombre><xsl:value-of select="ite/jefe_estudios/nombre"/></nombre>
-						<despacho><xsl-value-of select="ite/jefe_estudios/despacho"/></nombre>
+						<despacho><xsl:value-of select="ite/jefe_estudios/despacho"/></despacho>
 					</jefe_estudios>
 				</responsables>
 
@@ -38,10 +38,12 @@
 			<ciclos>
 				<xsl:for-each select="ite/ciclos/ciclo">
 					<ciclo>
-						<id><<xsl:value-of select="@id"/></id>
+						<id><xsl:value-of select="@id"/></id>
 						<nombre><xsl:value-of select="nombre"/></nombre>
 						<grado><xsl:value-of select="grado"/></grado>
 						<decreto><xsl:value-of select="decretoTitulo/@year"/></decreto>
+					</ciclo>
+				</xsl:for-each>
 			</ciclos>
 
 		</instituto>
