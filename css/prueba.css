@@ -50,3 +50,41 @@ jefe de estudios {
     font-size: 50;
     display: block;
 }
+
+profesores{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50;
+    display: block;
+}
+cursos{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50;
+    display: block;
+}contacto{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50;
+    display: block;
+}pwelcome{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50;
+    display: block;
+}
+h3 {
+    color: black;
+    font-weight: normal;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 22px;
+    text-transform:uppercase;  
+    font-weight: bolder;
+  }
+
+  h2{
+
+    color: rgb(22, 61, 238) ;
+    font-weight:bold;
+  }
