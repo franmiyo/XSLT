@@ -1,90 +1,60 @@
-@charset "ISO-8859-1";
+@charset "UTF-8";
+/* CSS Document */
 
-empresa {
-    background-color: black;
-    color:firebrick;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 80;
-    display: block;
+*{
 
+margin:0px;
+padding:0px;
+font-family:Arial, Helvetica, sans-serif;
+	
 }
 
-telefono {
-    width: 100px;
-    text-align: right;
-    display: block;
+#contenedor{
+     border: 1px solid #903;
+    margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	background-color:#FFF;
+    padding: 5px;        
+	
 }
 
-profesor {
-    width: 200px;
-    color: rgb(48, 37, 37);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60;
-    display: block;
+header {
+	border: 1px solid #903;
+	width:100%;
+    margin-bottom: 15px;
+    height: 150px;
+	background-color:rgba(153,0,0,1);
+	overflow: hidden;
+	
 }
 
-nombre {
-    width: 180px;
-    color: rgb(12, 9, 9);
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50;
-    display: block;
+section{
+    
+    border: 1px solid #903;
+    width: 550px;
+    float: left;
+    height: 500px;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
-director {
-    width: 180px;
-    color: rgb(12, 9, 9);
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50;
-    display: block;
+
+aside{
+    border: 1px solid #903;
+    margin-right: 15px;
+    width: 300px;
+    float: right;
+    height: 500px;
+    margin-bottom: 15px;
 }
 
-jefe de estudios {
-    width: 180px;
-    color: rgb(12, 9, 9);
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50;
-    display: block;
-}
+footer {
+     border: 1px solid #903;
+    clear: both;
+    width: 100%;
+    height: 150px;
 
-profesores{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50;
-    display: block;
+    background-color: rgba(153,0,0,1);
+    
 }
-cursos{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50;
-    display: block;
-}contacto{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50;
-    display: block;
-}pwelcome{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 50;
-    display: block;
-}
-h3 {
-    color: black;
-    font-weight: normal;
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 22px;
-    text-transform:uppercase;  
-    font-weight: bolder;
-  }
-
-  h2{
-
-    color: rgb(22, 61, 238) ;
-    font-weight:bold;
-  }
