@@ -67,3 +67,10 @@ h2 {
 h1 {
     text-align: center;
 }
+#enviar {
+    float: left;
+}
+#cajatexto{
+    float: left;
+    margin-right: 100px;
+}
