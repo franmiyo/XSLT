@@ -7,7 +7,9 @@
 				<link rel="stylesheet" type="text/css" href="css/prueba.css" />
 
 				<title>
-					<xsl:value-of select="ite/@nombre" />
+					<h1>
+						<xsl:value-of select="ite/@nombre" />
+					</h1>
 				</title>
 			</head>
 			<body>
@@ -21,31 +23,23 @@
 					<section>
 						<!-- Contenido principal -->
 						<h2>Ciclos</h2>
-						<!-- Lista no ordenada -->
-						<ul>
-							<xsl:for-each select="ite/ciclos/ciclo">
-								<li>
-									<a href="#ciclos">
-										<xsl:for-each select="nombre" />
-									</a>
-								</li>
-								<li>
-									<xsl:value-of select="@id" />
-								</li>
-							</xsl:for-each>
-						</ul>
+
 
 						<!-- Segunda tabla: ciclos -->
 						<table border="1">
 							<xsl:for-each select="ite/ciclos/ciclo">
 								<tr>
 									<th>Nombre</th>
+									<th>id</th>
 									<th>Grado</th>
 									<th>Decreto Título</th>
 								</tr>
 								<tr>
 									<td>
 										<xsl:value-of select="nombre" />
+									</td>
+									<td>
+										<xsl:value-of select="@id" />
 									</td>
 									<td>
 										<xsl:value-of select="grado" />
@@ -66,6 +60,12 @@
 						<label for="nombre">Nombre: </label>
 						<input id="nombre" type="text" name="nombre" />
 						<br />
+						<label for="email">E-mail: </label>
+						<input id="email" type="email" name="nombre" />
+						<br />
+						<label for="fecha">Fecha de nacimiento: </label>
+						<input id="fecha" type="date" name="fecha"/>
+						<br />
 
 						<label for="ciclo_elegido">Escoja el ciclo por el que quiere contactar: </label>
 						<select name="ciclo_elegido">
@@ -77,7 +77,7 @@
 								</xsl:element>
 							</xsl:for-each>
 						</select>
-
+						<br />
 						<label for="comentario">Comentario: </label>
 						<br />
 						<textarea rows="5" cols="60" name="comentario"></textarea>
@@ -124,10 +124,15 @@
 							</xsl:for-each>
 						</table>
 					</aside>
-
-					<footer></footer>
+				<footer>
+					Teléfono: <xsl:value-of select="ite/telefono"/>
+					<br/>
+					Empresa: <xsl:value-of select="ite/empresa"/>
+					<br/>
+					Web: <a href="{@web}"><xsl:value-of select="ite/@web"/></a>
+				</footer>
 				</div>
-
+				
 
 			</body>
 
