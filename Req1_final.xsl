@@ -26,7 +26,7 @@
 
 
 						<!-- Segunda tabla: ciclos -->
-						<table border="1">
+						<table id="tabla1" border="1">
 							<xsl:for-each select="ite/ciclos/ciclo">
 								<tr>
 									<th>Nombre</th>
@@ -52,7 +52,7 @@
 						</table>
 
 						<h2>
-							<a href="#formulario">FORMULARIO DE CONTACTO</a>
+							<p>FORMULARIO DE CONTACTO</p>
 						</h2>
 
 						<h3 id="formulario">Formulario</h3>
@@ -80,9 +80,9 @@
 						<br />
 						<label for="comentario">Comentario: </label>
 						<br />
-						<textarea rows="5" cols="60" name="comentario"></textarea>
+						<textarea id="cajatexto" rows="5" cols="60" name="comentario"></textarea>
 
-						<input type="submit" value="Enviar" />
+						<input id="enviar" type="submit" value="Enviar" />
 
 					</section>
 
@@ -90,7 +90,7 @@
 
 						<h2>Responsables</h2>
 						<p>
-							Director/a:
+							Directora:
 							<xsl:value-of select="ite/director/nombre" />
 							<br />
 							Despacho:
@@ -98,7 +98,7 @@
 							<br />
 						</p>
 						<p>
-							Jefe/a de estudios:
+							Jefe de estudios:
 							<xsl:value-of select="ite/jefe_estudios/nombre" />
 							<br />
 							Despacho:
@@ -107,7 +107,7 @@
 						</p>
 
 						<h2>Profesorado</h2>
-						<table border="1">
+						<table id="tabla2" border="1">
 							<xsl:for-each select="/ite/profesores/profesor">
 								<tr>
 									<th>ID</th>
