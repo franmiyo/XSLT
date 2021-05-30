@@ -27,13 +27,12 @@
 
 						<!-- Segunda tabla: ciclos -->
 						<table id="tabla1" border="1">
-							<xsl:for-each select="ite/ciclos/ciclo">
-								<tr>
-									<th>Nombre</th>
+							<th>Nombre</th>
 									<th>id</th>
 									<th>Grado</th>
 									<th>Decreto Título</th>
-								</tr>
+							<xsl:for-each select="ite/ciclos/ciclo">
+							
 								<tr>
 									<td>
 										<xsl:value-of select="nombre" />
@@ -87,7 +86,7 @@
 					</section>
 
 					<aside>
-
+						<br/>
 						<h2>Responsables</h2>
 						<p>
 							Directora:
@@ -105,6 +104,10 @@
 							<xsl:value-of select="ite/jefe_estudios/despacho" />
 							<br />
 						</p>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
 
 						<h2>Profesorado</h2>
 						<table id="tabla2" border="1">
@@ -125,11 +128,14 @@
 						</table>
 					</aside>
 				<footer>
+					<br/>
 					Teléfono: <xsl:value-of select="ite/telefono"/>
 					<br/>
 					Empresa: <xsl:value-of select="ite/empresa"/>
 					<br/>
 					Web: <a href="{@web}"><xsl:value-of select="ite/@web"/></a>
+					<br/>
+					
 				</footer>
 				</div>
 				
