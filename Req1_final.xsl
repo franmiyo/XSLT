@@ -4,8 +4,8 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link rel="stylesheet" type="text/css" href="css/prueba.css"/>
-			
+				<link rel="stylesheet" type="text/css" href="css/prueba.css" />
+
 				<title>
 					<xsl:value-of select="ite/@nombre" />
 				</title>
@@ -24,10 +24,14 @@
 						<!-- Lista no ordenada -->
 						<ul>
 							<xsl:for-each select="ite/ciclos/ciclo">
-								<li><a href="#ciclos"><xsl:for-each select="nombre"/></a></li>
-							<li>
-								<xsl:value-of select="@id" />
-							</li>
+								<li>
+									<a href="#ciclos">
+										<xsl:for-each select="nombre" />
+									</a>
+								</li>
+								<li>
+									<xsl:value-of select="@id" />
+								</li>
 							</xsl:for-each>
 						</ul>
 
@@ -61,16 +65,22 @@
 
 						<label for="nombre">Nombre: </label>
 						<input id="nombre" type="text" name="nombre" />
-
+						<br />
 
 						<label for="ciclo_elegido">Escoja el ciclo por el que quiere contactar: </label>
 						<select name="ciclo_elegido">
 							<xsl:for-each select="ite/ciclos/ciclo">
-								<xsl:value-of select="@id" />
+								<xsl:element name="option">
+									<xsl:value-of select="@id" />
 
-								<xsl:value-of select="nombre" />
+									<xsl:value-of select="nombre" />
+								</xsl:element>
 							</xsl:for-each>
 						</select>
+
+						<label for="comentario">Comentario: </label>
+						<br />
+						<textarea rows="5" cols="60" name="comentario"></textarea>
 
 						<input type="submit" value="Enviar" />
 
@@ -115,14 +125,10 @@
 						</table>
 					</aside>
 
-					<footer>
-					
-					</footer>
+					<footer></footer>
 				</div>
 
 
-
-			
 			</body>
 
 		</html>
